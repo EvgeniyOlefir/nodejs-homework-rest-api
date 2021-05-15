@@ -2,7 +2,9 @@
 // const contacts = require('./contacts.json')
 const db = require("./db");
 
-const listContacts = async () => {};
+const listContacts = async () => {
+  return db.get("contacts").value();
+};
 
 const getContactById = async (contactId) => {};
 
